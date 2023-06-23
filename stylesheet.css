@@ -15,6 +15,7 @@
     padding: 0.5em;
     background-color: #000000;
     text-align: center;
+    z-index: 2;
 }
 
 .head p {
@@ -32,7 +33,7 @@
 .quote {
     float: left;
     width: 60%;
-    padding: 152.6px 0;
+    padding: 5% 0;
     background-color: white;
     font-size: 1.5em;
     color: black;
@@ -47,7 +48,7 @@
 .quote-img {
     float: right;
     width: 40%;
-    height: 400px;
+    height: auto;
     background-color: white;
 }
 
@@ -92,7 +93,7 @@
 
 .books {
     float: right;
-    height: 30%;
+    height: auto;
     min-width: fit-content;
     padding: 20px;
     background-color: #000000;
@@ -154,7 +155,7 @@ a img:hover {
 }
 
 .footer {
-    height: fit-content;
+    height: auto;
     padding: 10px;
     font-size: 0.8em;
     background-color: #000000;
@@ -166,6 +167,112 @@ a img:hover {
 
 .footer a {
     color: white;
+}
+
+@media only screen and (max-width: 1300px) {
+    .about {
+        font-size: 2em;
+    }
+
+    .main-content {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .quote {
+        width: 100%;
+    }
+
+    .quote-img {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding: 0%;
+    }
+
+    .about {
+        font-size: 2em;
+    }
+
+    .main-content {
+        width: 100%;
+        margin: 0%;
+        font-size: 0.8em;
+    }
+
+    .main {
+        height: fit-content;
+    }
+
+    .books {
+        float: none;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .head{
+        font-size: 0.8em;
+    }
+    .quote pre {
+        font-size: 0.7em;
+    }
+
+    .quote-img{
+        width:70%;
+    }
+
+    .main{
+        padding: 10%;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .mid{
+        padding-top: 0;
+    }
+    .quote-img{
+        margin: 0;
+        padding: 2%;
+        width:100%;
+    }
+    .main{
+        padding: 5%;
+    }
+    .main-content{
+        font-size: 0.7em;
+    }
+    .books p{
+        font-size: 0.7em;
+    }
+
+    .footer{
+        font-size: 0.6em;
+    }
+}
+
+@media only screen and (max-width:400px){
+    body{
+        height: 100%;
+        
+    }
+    .quote-img{
+        display: inline-block;
+        overflow: hidden;
+        margin: none;
+        padding: 0;
+    }
 }
 
 /*
